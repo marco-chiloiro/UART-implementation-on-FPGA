@@ -24,7 +24,7 @@ The transmitter component adheres to the following schematic representation:
 
 <img src="images/TX.png" width="500" height="350" alt="Transmitter Schematic">
 
-#### Inputs:
+Inputs:
 
     - Clock: Internal clock of the FPGA (remember to specify it in the constraint file when implementing the module on the FPGA).
     - Data Valid: A std_logic signal; when '1', it indicates the start of data transmission.
