@@ -22,7 +22,7 @@ The module comprises two main components: the transmitter (TX) and the receiver 
 
 The transmitter component adheres to the following schematic representation:
 
-![Transmitter Schematic](images/transmitter_schematic.png)
+<img src="images/TX.png" width="500" height="350" alt="Transmitter Schematic">
 
 #### Inputs:
 
@@ -40,7 +40,8 @@ Outputs:
 
 The receiver component is illustrated by the following schematic:
 
-![Transmitter Schematic](images/transmitter_schematic.png)
+
+<img src="images/RX.png" width="500" height="350" alt="Transmitter Schematic">
 
 Inputs:
 
@@ -59,5 +60,6 @@ The sample generator block is essentially a baudrate generator shifted of half b
 
 Within the 'sim' directory, you'll find VHDL testbenches, denoted by filenames ending in '_tb.vhd', specifically crafted for simulating the UART module along with its integral components (the transmitter and the receiver). Utilize these testbenches as a vital step in verifying the functionality of the UART implementation before proceeding with its deployment onto the FPGA.
 
-When deploying the module on the FPGA, a practical and effective method for testing its functionality is to perform a loopback test. This procedure, illustrated in the figure below, involves transmitting data from the module's transmitter (TX) and receiving it back through the module's receiver (RX). This closed-loop setup enables a comprehensive assessment of the UART implementation, evaluating both the transmission and reception processes.
+When deploying the module on the FPGA, a practical and effective method for testing its functionality is to perform a loopback test, illustrated in the figure below. This closed-loop setup enables a comprehensive assessment of the UART implementation, evaluating both the transmission and reception processes.
 
+![Echo](images/ECHO.png)
